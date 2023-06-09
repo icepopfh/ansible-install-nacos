@@ -1,4 +1,0 @@
----
-- name: Add Nacos User
-  user: name={{ user }} shell=/bin/bash append=yes
-  when: add_user
