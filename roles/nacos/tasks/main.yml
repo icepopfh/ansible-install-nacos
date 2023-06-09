@@ -1,0 +1,16 @@
+---
+- name: Add Nacos User
+  user: name={{ user }} shell=/bin/bash append=yes
+  when: add_user
+
+- name: Install Nacos
+  include: install_nacos.yml
+  when: install_nacos
+
+- name: Config Nacos
+  include: config_nacos.yml
+  when: config_nacos
+
+- name: Start Nacos
+  service: name=nacos state=restarted
+  when: start_service

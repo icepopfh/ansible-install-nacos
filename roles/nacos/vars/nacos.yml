@@ -1,0 +1,29 @@
+---
+# nacos version
+nacos_version: 2.0.3
+
+# nacos user
+user: "root"
+group: "root"
+
+# nacos service address
+nacos_address:
+  - 172.25.240.159:8848
+  - 172.25.240.158:8848
+  - 172.25.240.33:8848
+
+# mysql address
+mysql:
+  address: 172.25.250.27:3306
+  user: "nacos-prod"
+  password: ""
+  database: "nacos-prod"
+
+# nacos port
+nacos_port: 8848
+
+# env path
+install_dir: "/data"
+tmp_path: "/tmp"
+
+
